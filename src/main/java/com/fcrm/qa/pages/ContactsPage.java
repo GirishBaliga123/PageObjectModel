@@ -1,7 +1,9 @@
 package com.fcrm.qa.pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
@@ -26,6 +28,8 @@ public class ContactsPage extends TestBase {
 	@FindBy(xpath="//form[@name='contactForm']//input[@type='submit' and @value='Save']")
 	private WebElement savebtn;
 	
+	@FindBy(xpath="//span[@id='first_name']")
+	private WebElement first_name;
 	
 	//Initialization of page factory
 	public ContactsPage()
@@ -36,6 +40,11 @@ public class ContactsPage extends TestBase {
 	public boolean verifyContactsLabel()
 	{
 		return contactslabel.isDisplayed();
+	}
+	
+	public boolean verifyContactsName()
+	{
+		return first_name.isDisplayed();
 	}
 	
 	public void selectContactsByName(String name)
@@ -54,6 +63,17 @@ public class ContactsPage extends TestBase {
 		company.sendKeys(comp);
 		savebtn.click();
 		
+	}
+	
+	public void doubleClickOnContactsByName(String name)
+	{
+		WebElement ele=driver.findElement(By.xpath("//a[text()='"+name+"']"));
+		
+		Actions action = new Actions(driver);
+		
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView();", ele);
+		
+		action.doubleClick(ele).build().perform();
 	}
 	
 	

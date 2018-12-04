@@ -1,49 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results skipped="0" failed="0" ignored="3" total="4" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2018-11-09T11:37:37Z" name="Default suite" finished-at="2018-11-09T11:39:46Z" duration-ms="128765">
+  <suite name="Default suite" duration-ms="30225" started-at="2018-12-03T11:31:58Z" finished-at="2018-12-03T11:32:28Z">
     <groups>
     </groups>
-    <test started-at="2018-11-09T11:37:37Z" name="Default test" finished-at="2018-11-09T11:39:46Z" duration-ms="128765">
-      <class name="com.fcrm.qa.testcases.LoginPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.fcrm.qa.testcases.LoginPageTest@2e1d27ba]" started-at="2018-11-09T11:37:37Z" name="setUp" finished-at="2018-11-09T11:38:18Z" duration-ms="40949" status="PASS">
+    <test name="Default test" duration-ms="30225" started-at="2018-12-03T11:31:58Z" finished-at="2018-12-03T11:32:28Z">
+      <class name="com.fcrm.qa.testcases.ContactsPageTest">
+        <test-method status="PASS" signature="Setup()[pri:0, instance:com.fcrm.qa.testcases.ContactsPageTest@754ba872]" name="Setup" is-config="true" duration-ms="25017" started-at="2018-12-03T11:31:58Z" finished-at="2018-12-03T11:32:23Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="loginPageTitletest()[pri:1, instance:com.fcrm.qa.testcases.LoginPageTest@2e1d27ba]" started-at="2018-11-09T11:38:18Z" name="loginPageTitletest" finished-at="2018-11-09T11:38:18Z" duration-ms="23" status="PASS">
+        </test-method> <!-- Setup -->
+        <test-method status="PASS" signature="verifyContactsCreated()[pri:4, instance:com.fcrm.qa.testcases.ContactsPageTest@754ba872]" name="verifyContactsCreated" duration-ms="3902" started-at="2018-12-03T11:32:23Z" finished-at="2018-12-03T11:32:27Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginPageTitletest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.fcrm.qa.testcases.LoginPageTest@2e1d27ba]" started-at="2018-11-09T11:38:18Z" name="tearDown" finished-at="2018-11-09T11:38:18Z" duration-ms="165" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.fcrm.qa.testcases.LoginPageTest@2e1d27ba]" started-at="2018-11-09T11:38:18Z" name="setUp" finished-at="2018-11-09T11:38:58Z" duration-ms="39408" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="freecrmLogoTest()[pri:2, instance:com.fcrm.qa.testcases.LoginPageTest@2e1d27ba]" started-at="2018-11-09T11:38:58Z" name="freecrmLogoTest" finished-at="2018-11-09T11:38:58Z" duration-ms="156" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- freecrmLogoTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.fcrm.qa.testcases.LoginPageTest@2e1d27ba]" started-at="2018-11-09T11:38:58Z" name="tearDown" finished-at="2018-11-09T11:38:58Z" duration-ms="71" status="PASS">
+        </test-method> <!-- verifyContactsCreated -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.fcrm.qa.testcases.ContactsPageTest@754ba872]" name="tearDown" is-config="true" duration-ms="1278" started-at="2018-12-03T11:32:27Z" finished-at="2018-12-03T11:32:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.fcrm.qa.testcases.LoginPageTest@2e1d27ba]" started-at="2018-11-09T11:38:58Z" name="setUp" finished-at="2018-11-09T11:39:39Z" duration-ms="41160" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="loginTest()[pri:3, instance:com.fcrm.qa.testcases.LoginPageTest@2e1d27ba]" started-at="2018-11-09T11:39:39Z" name="loginTest" finished-at="2018-11-09T11:39:46Z" duration-ms="6548" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.fcrm.qa.testcases.LoginPageTest@2e1d27ba]" started-at="2018-11-09T11:39:46Z" name="tearDown" finished-at="2018-11-09T11:39:46Z" duration-ms="237" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.fcrm.qa.testcases.LoginPageTest -->
+      </class> <!-- com.fcrm.qa.testcases.ContactsPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

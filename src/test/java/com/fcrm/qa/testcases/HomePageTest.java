@@ -58,9 +58,6 @@ public class HomePageTest extends TestBase{
 	
 	
 	
-	
-	
-	
 	@AfterMethod
 	public void tearDown()
 	{

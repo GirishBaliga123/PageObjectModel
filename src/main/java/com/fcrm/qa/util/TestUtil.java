@@ -24,8 +24,8 @@ public class TestUtil extends TestBase {
 	static Workbook book;
 	static Sheet sheet;
 	
-	public static String TESTDATA_SHEET_PATH="C:\\SundayFW\\AutomationFramworkFreeCRM\\src"
-			+ "\\main\\java\\com\\fcrm\\qa\\testdata\\FreeCrmTestData.xlsx";
+	public static String TESTDATA_SHEET_PATH="C/home/techjini/AutomationFW"
+			+ "/PageObjectModel/src/main/java/com/fcrm/qaFreeCrmTestData.xlsx";
 	
 	
 	// Method to switch to frame 

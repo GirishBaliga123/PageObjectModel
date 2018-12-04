@@ -29,8 +29,8 @@ public class TestBase {
 		try {
 			
 		prop = new Properties();
-	    FileInputStream fp = new FileInputStream("C:\\SundayFW\\AutomationFramworkFreeCRM\\src\\main\\java\\"
-	    		+ "com\\fcrm\\qa\\config\\config.properties");
+	    FileInputStream fp = new FileInputStream("/home/techjini/AutomationFW/PageObjectModel"
+	    		+ "/src/main/java/com/fcrm/qa/config/config.properties");
 		 prop.load(fp);
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
@@ -47,12 +47,12 @@ public class TestBase {
 		
 		if(browsername.equals("Chrome"))
 		{
-			 System.setProperty("webdriver.chrome.driver", "C:\\SeleniumSoftware\\chromedriver_win32\\chromedriver.exe");
+			 System.setProperty("webdriver.chrome.driver", "/home/techjini/chromedriver.exe");
 			driver = new ChromeDriver();
 		}
 		else if(browsername.equals("FF"))
 		{
-			System.setProperty("webdriver.gecko.driver", "C:\\Selenium\\Geckodriver\\geckodriver-v0.20.1-win64\\geckodriver.exe");
+			System.setProperty("webdriver.gecko.driver", "/home/techjini/Downloads/geckodriver");
 			driver = new FirefoxDriver();
 		}
 		

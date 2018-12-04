@@ -63,6 +63,14 @@ public class ContactsPageTest extends TestBase {
 		
 	}
 	
+	@Test(priority=4)
+	public void verifyContactsCreated() throws InterruptedException
+	{
+		contactpage.doubleClickOnContactsByName("Nymesh Chellur");
+		Assert.assertTrue(contactpage.verifyContactsName(), "Name not matching");
+		Thread.sleep(2000);
+	}
+	
 
 	@DataProvider
 	public Object[][] getCRMTestData(){
