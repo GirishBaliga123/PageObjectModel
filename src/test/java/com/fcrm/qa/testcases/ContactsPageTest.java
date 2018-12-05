@@ -66,12 +66,23 @@ public class ContactsPageTest extends TestBase {
 	@Test(priority=4)
 	public void verifyContactsCreated() throws InterruptedException
 	{
-		contactpage.doubleClickOnContactsByName("Nymesh Chellur");
+		contactpage.ViewContactsByName("Nymesh Chellur");
 		Assert.assertTrue(contactpage.verifyContactsName(), "Name not matching");
 		Thread.sleep(2000);
 	}
 	
 
+	@Test(priority=5)
+	public void verifyEditContactsCreated() throws Exception 
+	{
+		contactpage.EditContacts("Girish Baliga", "Harish", "kumar", "Manh");
+		Assert.assertTrue(contactpage.verifyContactsName(), "Name not matching");
+		Thread.sleep(3000);
+	}
+	
+	
+	
+	
 	@DataProvider
 	public Object[][] getCRMTestData(){
 		Object data[][] = TestUtil.getTestData(sheetName);

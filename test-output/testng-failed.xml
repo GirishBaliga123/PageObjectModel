@@ -5,8 +5,8 @@
     <classes>
       <class name="com.fcrm.qa.testcases.ContactsPageTest">
         <methods>
+          <include name="verifyEditContactsCreated"/>
           <include name="Setup"/>
-          <include name="verifyContactsCreated"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.fcrm.qa.testcases.ContactsPageTest -->

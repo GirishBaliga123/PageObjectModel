@@ -31,6 +31,10 @@ public class ContactsPage extends TestBase {
 	@FindBy(xpath="//span[@id='first_name']")
 	private WebElement first_name;
 	
+	@FindBy(xpath="//input[@value='Edit']")
+	private WebElement Editbtn;
+	
+	
 	//Initialization of page factory
 	public ContactsPage()
 	{
@@ -65,7 +69,7 @@ public class ContactsPage extends TestBase {
 		
 	}
 	
-	public void doubleClickOnContactsByName(String name)
+	public void ViewContactsByName(String name)
 	{
 		WebElement ele=driver.findElement(By.xpath("//a[text()='"+name+"']"));
 		
@@ -74,6 +78,27 @@ public class ContactsPage extends TestBase {
 		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView();", ele);
 		
 		action.doubleClick(ele).build().perform();
+	}
+	
+	public void EditContacts(String name, String ftName, String ltName, String comp) throws InterruptedException
+	{
+		
+		
+		driver.findElement(By.xpath("//a[text()='"+name+"']")).click();
+		Thread.sleep(2000);
+        
+		Editbtn.click();
+		
+		firstName.clear();
+		firstName.sendKeys(ftName);
+		
+		LastName.clear();
+		LastName.sendKeys(ltName);
+		
+		company.clear();
+		company.sendKeys(comp);
+		
+		savebtn.click();
 	}
 	
 	
